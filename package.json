@@ -1,0 +1,11 @@
+{
+  "name": "cassandra-wrapper",
+  "version": "1.0.0",
+  "description": "cassandra wrapper",
+  "main": "cassandra.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Tamilselvan",
+  "license": "ISC"
+}
