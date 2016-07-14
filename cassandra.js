@@ -4,10 +4,10 @@ const cassandraDriver = require('cassandra-driver');
 
 const Cassandra = function(config) {
      var self = this;
-     self.port = config.port || '127.0.0.1';
+     self.contactPoints = config.contactPoints || '127.0.0.1';
      self.keyspace = config.keyspace;
      self.cassandraDriver = cassandraDriver;
-     self.client = new cassandraDriver.Client({ contactPoints: [self.port], keyspace: self.keyspace});
+     self.client = new cassandraDriver.Client({ contactPoints: [self.contactPoints], keyspace: self.keyspace});
 };
 
 function constructInsertParams(parameters){

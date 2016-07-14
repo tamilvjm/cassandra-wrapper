@@ -7,5 +7,12 @@
     "test": "npm test"
   },
   "author": "Tamilselvan",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cassandra-driver": "^3.1.1"
+  },
+  "repository": {
+   "type": "git",
+   "url": "https://github.com/tamilvjm/cassandra-wrapper.git"
+  }
 }
