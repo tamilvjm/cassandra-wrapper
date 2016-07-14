@@ -2,9 +2,12 @@
 
 const cassandraDriver = require('cassandra-driver');
 
-const Cassandra = function() {
-     this.cassandraDriver = cassandraDriver;
-     this.client = new cassandraDriver.Client({ contactPoints: ['127.0.0.1'], keyspace: 'scopradb'});
+const Cassandra = function(config) {
+     var self = this;
+     self.port = config.port || '127.0.0.1';
+     self.keyspace = config.keyspace;
+     self.cassandraDriver = cassandraDriver;
+     self.client = new cassandraDriver.Client({ contactPoints: [self.port], keyspace: self.keyspace});
 };
 
 function constructInsertParams(parameters){
@@ -119,4 +122,4 @@ Cassandra.prototype.query = function(cql, values, queryOptions, callback) {
 };
 
 
-module.exports = new Cassandra();
+module.exports = Cassandra;
