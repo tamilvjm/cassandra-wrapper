@@ -1,18 +1,31 @@
 {
   "name": "cassandra-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "cassandra wrapper",
-  "main": "cassandra.js",
+  "main": "lib/cassandra.js",
   "scripts": {
-    "test": "npm test"
+    "test": "node test/test.js"
   },
-  "author": "Tamilselvan",
-  "license": "ISC",
+  "author": "Tamilselvan Nachimuthu <tamilselvanvjm@gmail.com>",
   "dependencies": {
     "cassandra-driver": "^3.1.1"
   },
   "repository": {
    "type": "git",
    "url": "https://github.com/tamilvjm/cassandra-wrapper.git"
-  }
+  },
+  "engines": {"node" : ">=4.0.0"},
+  "keywords": [
+    "cassandra",
+    "cql",
+    "cql3",
+    "connection",
+    "pool"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jorgebay/node-cassandra-cql/raw/master/LICENSE.txt"
+    }
+  ]
 }
