@@ -4,9 +4,8 @@
 
 ## Installation
 
-```bash
 $ npm install cassandra-wrapper
-```
+
 
 ## Features
 - Wrapper for building js objects to cql query
