@@ -1,6 +1,6 @@
 {
   "name": "cassandra-wrapper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "cassandra wrapper",
   "main": "lib/cassandra.js",
   "scripts": {
